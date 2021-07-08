@@ -52,6 +52,22 @@ end
 
 sort_handle(journalists)
 
+def caps_number(journalists)
+    count = 0
+    journalists.each do |i|
+    
+    
+       
+        if i[1] != i[1].downcase
+            count +=1
+        end
+
+    end
+    puts "Il y à #{count} emails qui commencent par une majuscule !"
+end
+caps_number(journalists)
+
+
 
 def find_handle(journalists)
     puts "Quel est la position dans l'array de : @epenser"
@@ -76,7 +92,7 @@ def classing_handle(journalists)
     for j in (0..n)
         count = 0
         journalists.each do |i|
-            if i.length == j
+            if i[1..-1].length == j
                 count += 1
             end
         

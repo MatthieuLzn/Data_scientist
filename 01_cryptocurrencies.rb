@@ -24,13 +24,13 @@ end
 def blockchain_min(blockchain)
 puts blockchain.min_by{|k,v| v}
 end
-#blockchain_min(blockchain)
+blockchain_min(blockchain)
 
 #Affichage de la plus grosse 
 def blockchain_max(blockchain)
 puts blockchain.max_by{|k,v| v.to_f}
 end
-#blockchain_max(blockchain)
+blockchain_max(blockchain)
 
 #Affiche de toutes les valeurs < 6000 + affichage de la plus haute parmis celles la
 def inf_sixmille(blockchain)
